@@ -1,0 +1,15 @@
+@import url(main/description.css);
+@import url(main/symbol.css);
+@import url(main/company.css);
+@import url(main/team.css);
+@import url(main/email.css);
+@import url(main/buttons.css);
+@import url(main/alert.css);
+
+main {
+    z-index: 0;
+}
+
+.async-image {
+    transition-timing-function: ease-in-out;
+}

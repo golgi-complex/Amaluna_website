@@ -1,0 +1,110 @@
+.button-up {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom: 120px;
+    z-index: 100;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .button-up {
+        display: none;
+    }
+}
+
+.button-up.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.button-up img{
+    display: block;
+    height: 95%;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: 1;
+}
+.button-up img:hover{
+    height: 100%;
+}
+
+.button-up__shadow{
+    z-index: 0;
+}
+
+.button-up.active:hover .button-up__shadow{
+    display: flex;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50px;
+    filter: blur(30px);
+}
+
+.button-telegram{
+    display: flex;
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    cursor: pointer;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .button-telegram {
+        visibility: visible;
+    }
+}
+@media (max-width: 400px) {
+    .button-telegram {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.button-telegram img {
+    display: block;
+    height: 95%;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.button-telegram img:hover {
+    height: 100%;
+}
+
+.button-telegram__shadow{
+    z-index: 0;
+}
+
+.button-telegram:hover .button-telegram__shadow {
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(41, 160, 218);
+    border-radius: 50px;
+    filter: blur(20px);
+}
+@media (max-width: 400px) {
+    .button-telegram:hover .button-telegram__shadow {
+        height: 30px;
+        width: 30px;
+    }
+}

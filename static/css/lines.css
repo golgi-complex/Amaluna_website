@@ -1,0 +1,27 @@
+.line__wrap {
+    padding: 2.5% 0% 2.5% 0%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-black {
+    border: none;
+    background-color: black;
+    height: 3px;
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+    .line {
+        height: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .line {
+        height: 1px;
+    }
+}

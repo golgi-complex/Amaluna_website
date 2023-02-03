@@ -1,0 +1,51 @@
+.header__nav-desktop {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+}
+@media (max-width: 992px) {
+    .header__nav-desktop {
+        visibility: hidden;
+    }
+}
+
+.header__menu-desktop {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.item-header__logo-desktop {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: end;
+}
+
+.item-header__logo-desktop img {
+    display: flex;
+    position: relative;
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.header__link {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.header__link:hover {
+    text-shadow: 0 0 1em white;
+    font-size: 18px;
+}

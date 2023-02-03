@@ -1,0 +1,119 @@
+footer{
+    padding: 2.5% 5% 2.5% 5%; 
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: rgb(9, 7, 31);
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 0;
+}
+
+.footer__container{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.footer__logo-container{
+    display: flex;
+    position: relative;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer__logo-image{
+    display: flex;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    justify-content: start;
+}
+
+.footer__logo-image img {
+    display: flex;
+    position: relative;
+    max-width: 150px;
+    object-fit: contain;
+}
+@media (max-width: 992px) {
+    .footer__logo-image img {
+        max-width: 125px;
+    }
+}
+@media (max-width: 767px) {
+    .footer__logo-image img {
+        max-width: 100px;
+    }
+}
+
+.footer__requisites-container{
+    display: flex;
+    position: relative;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer__requisites{
+    display: flex;
+    position: relative;
+    width: 75%;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    font-size: 14px;
+    flex-direction: column;
+}
+@media (max-width: 992px) {
+    .footer__requisites {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .footer__requisites {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+.footer__requisites-item{
+    padding: 0% 0% 1.5% 0%;
+}
+
+.line-white {
+    border: none;
+    background-color: white;
+    height: 3px;
+    width: 50%;
+}
+@media (max-width: 992px) {
+    .line-white {
+        height: 2px;
+    }
+}
+@media (max-width: 480px) {
+    .line-white {
+        height: 1px;
+    }
+}
+
+.footer__copyright{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+@media (max-width: 992px) {
+    .footer__copyright {
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .footer__copyright {
+        font-size: 10px;
+    }
+}

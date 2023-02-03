@@ -1,0 +1,184 @@
+.email {
+    padding: 5% 0% 5% 0%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.email__image {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: rgb(32, 36, 92);
+    z-index: 0;
+}
+
+.email__image img {
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: opacity(0.5) grayscale(99%) blur(2px) brightness(50%);
+}
+
+.email__title {
+    padding: 0% 0% 1% 0%;
+    display: flex;
+    position: relative;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .email__title {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 767px) {
+    .email__title {
+        font-size: 32px;
+    }
+}
+
+.email__container {
+    margin: 0% 0% 0% 0%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+}
+
+.email__message {
+    margin: 0% 0% 20px 0%;
+    display: flex;
+    width: 700px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    font-size: 14px;
+}
+@media (max-width: 992px) {
+    .email__message {
+        width: 500px;
+    }
+}
+@media (max-width: 767px) {
+    .email__message {
+        width: 300px;
+    }
+}
+@media (max-width: 350px) {
+    .email__message {
+        width: 200px;
+    }
+}
+
+.email__message:focus {
+    padding: 0% 0% 0% 2.5%;
+    text-align: start;
+    background-color: white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    border: 0;
+}
+
+.email__user{
+    display: flex;
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+    font-size: 14px;
+}
+@media (max-width: 992px) {
+    .email__user {
+        width: 250px;
+    }
+}
+@media (max-width: 767px) {
+    .email__user {
+        width: 170px;
+    }
+}
+@media (max-width: 350px) {
+    .email__user {
+        width: 130px;
+    }
+}
+
+.email__user:focus {
+    padding: 0% 0% 0% 2.5%;
+    text-align: start;
+    background-color: white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    border: 0;
+}
+
+.email__button-container {
+    padding: 37px 0% 0% 0%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+@media (max-width: 640px) {
+    .email__button-container {
+        margin: 0% 0% 20px 0%;
+    }
+}
+
+.email__button {
+    position: absolute;
+    display: flex;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(0, 120, 190);
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.email__button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 120, 190);
+    box-shadow: 0px 0px 25px 1px rgb(255, 255, 255);
+    font-size: 19px;
+    width: 175px;
+    height: 40px;
+    transition: all 0.1s ease 0s;
+}
